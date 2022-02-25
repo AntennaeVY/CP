@@ -2,6 +2,8 @@
   "C_Cpp.errorSquiggles": "Disabled",
   "C_Cpp.intelliSenseEngineFallback": "Disabled",
   "files.associations": {
-    "string": "cpp"
+    "string": "cpp",
+    "iostream": "cpp",
+    "ostream": "cpp"
   }
 }
