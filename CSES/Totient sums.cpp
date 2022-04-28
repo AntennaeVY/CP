@@ -13,11 +13,11 @@ int main() {
   vector<long long> sieve(10000001, 0);
   vector<long long> prefix_sum(10000001, 0);
 
-  for (long long i{}; i <= 10000000; i++) {
+  for (long long i{}; i <= 1e7; i++) {
     phi[i] = i;
   }
 
-  for (long long i = 2; i <= 10000000; i++) {
+  for (long long i = 2; i <= 1e7; i++) {
     prefix_sum[i] += prefix_sum[i - 1];
 
     if (sieve[i] == 1) {
@@ -28,7 +28,7 @@ int main() {
     phi[i] = i - 1;
     prefix_sum[i] += phi[i];
 
-    for (long long j = 2 * i; j <= 10000000; j += i) {
+    for (long long j = 2 * i; j <= 1e7; j += i) {
       phi[j] /= i;
       phi[j] *= i - 1;
 
