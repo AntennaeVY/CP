@@ -6,6 +6,22 @@ int gcd(int a, int b) {
   gcd(b, a % b);
 }
 
+int gcdIt(int a, int b) {
+  if (a < b) {
+    swap(a, b);
+  }
+
+  if (b == 0) return a;
+
+  while (a % b != 0) {
+    a = a % b;
+
+    swap(a, b);
+  }
+
+  return a;
+}
+
 int main() {
   int a, b;
   cin >> a >> b;

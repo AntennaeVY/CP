@@ -23,7 +23,7 @@ long long binPowIt(long long n, long long m) {
     }
     n = n * n;
 
-    m >>= 1;  // ??
+    m >>= 1;
   }
 
   return acc;
