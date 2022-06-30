@@ -1,49 +1,58 @@
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
-void mergeSort(vector<int>& a, int start, int end) {
-  if (start >= end) {
-    return;
+void merge(vector<int> &arr, int left, int mid, int right) {
+  int leftElems = mid - left + 1;
+  int rightElems = right - mid;
+
+  vector<int> L(leftElems), R(rightElems);
+
+  for (int i{}; i < leftElems; i++) {
+    L[i] = arr[left + i];
   }
 
-  int mid = (start + end) / 2;
-
-  mergeSort(a, start, mid);
-  mergeSort(a, mid + 1, end);
-
-  // merge();
-  int i = 0, j = 0, k = start;
-  int n1 = mid - start + 1;
-  int n2 = end - mid;
-
-  vector<int> l(n1);
-  vector<int> r(n2);
-
-  for (int e{}; e < n1; e++) {
-    l[e] = a[start + e];
+  for (int i{}; i < rightElems; i++) {
+    R[i] = arr[mid + i + 1];
   }
 
-  for (int e{}; e < n2; e++) {
-    r[e] = a[mid + 1 + e];
+  int i = 0, j = 0, k = left;
+
+  while (i < leftElems && j < rightElems) {
+    if (L[i] <= R[j])
+      arr[k++] = L[i++];
+    else
+      arr[k++] = R[j++];
   }
 
-  while (i < n1 && j < n2) {
-    if (l[i] < r[j]) {
-      a[k++] = l[i++];
-    } else {
-      a[k++] = r[j++];
-    }
-  }
-  while (i < n1) a[k++] = l[i++];
-  while (j < n2) a[k++] = r[j++];
+  while (i < leftElems) arr[k++] = L[i++];
+
+  while (j < rightElems) arr[k++] = R[j++];
+}
+
+void mergesort(vector<int> &arr, int left, int right) {
+  if (left >= right) return;
+
+  int mid = left + (right - left) / 2;
+
+  mergesort(arr, left, mid);
+  mergesort(arr, mid + 1, right);
+
+  // Merge
+  merge(arr, left, mid, right);
 }
 
 int main() {
-  vector<int> test{3, 4, 6, 7, 8, 10, 20, 5};
-  mergeSort(test, 0, test.size() - 1);
+  vector<int> arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-  for (auto i : test) {
-    cout << i << " ";
+  for (auto x : arr) {
+    cout << x << " ";
+  }
+
+  cout << endl;
+
+  mergesort(arr, 0, arr.size() - 1);
+
+  for (auto x : arr) {
+    cout << x << " ";
   }
 }
