@@ -1,32 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-map<long long, int> cache;
-
-int search(long long x) {
-  if (cache.count(x)) return cache[x];
-
-  int mn = __builtin_popcountll(x);
-
-  long long factorial = 6;
-  for (int i = 4; factorial <= x; i++) {
-    mn = min(mn, 1 + search(x - factorial));
-
-    factorial *= i;
-  }
-
-  cache[x] = mn;
-  return mn;
-}
-
 int main() {
-  int t;
-  cin >> t;
+	int t;
+	cin >> t;
+	
+	vector<long long> fact(15, 0);
+	fact[0] = fact[1] = 1;
+	
+	for(int i=2; i < 15; i++) {
+		fact[i] = fact[i-1]*i;
+	}
+	
+	while(t--) {
+		long long n;
+		cin >> n;
+		
+		int mn = __builtin_popcountll(n);
+		
+		for(int i=0; i < (1 << 15); i++) {
+			long long sum = 0;
+			
+			for(int j=2; j <= 14; j++) {
+				if ((i >> j) & 1)
+					sum += fact[j];
+			}
+			
+			if (sum > n || (i ^ 3) != i + 3)
+				continue;
+				
+			mn = min(mn, __builtin_popcountll(i) + __builtin_popcountll(n-sum));
+		}
+		
+		cout << mn << endl;
+	}
+	
 
-  while (t--) {
-    long long n;
-    cin >> n;
-
-    cout << search(n) << endl;
-  }
 }
