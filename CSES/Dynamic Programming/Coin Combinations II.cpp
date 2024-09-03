@@ -7,16 +7,15 @@ int main() {
   int n, x;
   cin >> n >> x;
 
-  vector<int> c(n), dp(x + 1, 0);
-  for (auto &it : c) cin >> it;
+  vector<int> c(n);
+  for (auto &ci : c) cin >> ci;
 
+  vector<int> dp(x + 1);
   dp[0] = 1;
 
-  for (auto i : c) {
-    for (int j = i; j <= x; j++) {
-      if (j - i >= 0) dp[j] = (dp[j] + dp[j - i]) % mod;
-    }
-  }
+  for (auto j : c)
+    for (int i = j; i <= x; i++)
+      dp[i] += dp[i - j], dp[i] %= mod;
 
   cout << dp[x] << endl;
 }
