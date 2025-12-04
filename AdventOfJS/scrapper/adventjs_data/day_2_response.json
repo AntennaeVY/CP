@@ -1,0 +1,149 @@
+{
+  "ops": 0,
+  "results": {
+    "details": [
+      {
+        "info": {
+          "msg": "return type",
+          "expected": "\"array\"",
+          "actual": "\"undefined\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": true,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "manufactureGifts([{ toy: 'car', quantity: 3 }, { toy: 'doll', quantity: 1 }, { toy: 'ball', quantity: 2 }])",
+          "expected": "[\"car\",\"car\",\"car\",\"doll\",\"ball\",\"ball\"]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "manufactureGifts([{ toy: 'train', quantity: 0 }, { toy: 'bear', quantity: -2 }, { toy: 'puzzle', quantity: 1 }])",
+          "expected": "[\"puzzle\"]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "manufactureGifts([])",
+          "expected": "[]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "manufactureGifts([{ toy: 'car', quantity: 1 }, { toy: 'doll', quantity: 2 }, { toy: 'ball', quantity: 0 }, { toy: 'car', quantity: 3 }])",
+          "expected": "[\"car\",\"doll\",\"doll\",\"car\",\"car\",\"car\"]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "manufactureGifts([{ toy: 'robot', quantity: 2 }, { toy: 'drone', quantity: '3' }, { toy: 'ball', quantity: 1 }])",
+          "expected": "[\"robot\",\"robot\",\"ball\"]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      }
+    ],
+    "failures": 13,
+    "secretFails": 7,
+    "totalPublic": 13,
+    "total": 13
+  },
+  "codeReport": {},
+  "points": 0,
+  "alreadySavedStars": 0,
+  "stars": 0,
+  "consoleLogs": [],
+  "timeBonus": 0,
+  "timeBonusReason": null,
+  "advice": null
+}

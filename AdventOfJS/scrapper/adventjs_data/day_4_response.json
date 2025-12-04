@@ -1,0 +1,140 @@
+{
+  "ops": 0,
+  "results": {
+    "details": [
+      {
+        "info": {
+          "msg": "return type",
+          "expected": "\"string\"",
+          "actual": "\"undefined\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": true,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "createXmasTree(3, \"*\")",
+          "expected": "\"__*__\\n_***_\\n*****\\n__#__\\n__#__\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "createXmasTree(5, \"+\")",
+          "expected": "\"____+____\\n___+++___\\n__+++++__\\n_+++++++_\\n+++++++++\\n____#____\\n____#____\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "createXmasTree(6, \"@\")",
+          "expected": "\"_____@_____\\n____@@@____\\n___@@@@@___\\n__@@@@@@@__\\n_@@@@@@@@@_\\n@@@@@@@@@@@\\n_____#_____\\n_____#_____\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "createXmasTree(1, \"*\")",
+          "expected": "\"*\\n#\\n#\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "createXmasTree(4, \"#\")",
+          "expected": "\"___#___\\n__###__\\n_#####_\\n#######\\n___#___\\n___#___\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      }
+    ],
+    "failures": 12,
+    "secretFails": 6,
+    "totalPublic": 12,
+    "total": 12
+  },
+  "codeReport": {},
+  "points": 0,
+  "alreadySavedStars": 0,
+  "stars": 0,
+  "consoleLogs": [],
+  "timeBonus": 0,
+  "timeBonusReason": null,
+  "advice": null
+}

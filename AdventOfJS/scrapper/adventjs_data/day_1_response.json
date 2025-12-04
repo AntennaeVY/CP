@@ -1,0 +1,140 @@
+{
+  "ops": 0,
+  "results": {
+    "details": [
+      {
+        "info": {
+          "msg": "return type",
+          "expected": "\"array\"",
+          "actual": "\"undefined\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": true,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "filterGifts(['car', 'doll#arm', 'ball', '#train'])",
+          "expected": "[\"car\",\"ball\"]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "filterGifts(['#broken', '#rusty'])",
+          "expected": "[]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "filterGifts([])",
+          "expected": "[]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "filterGifts(['game', 'poster', 'sticker#bad', 'console'])",
+          "expected": "[\"game\",\"poster\",\"console\"]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "filterGifts(['#bad', 'car', '#oops', 'ball'])",
+          "expected": "[\"car\",\"ball\"]"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      }
+    ],
+    "failures": 12,
+    "secretFails": 6,
+    "totalPublic": 12,
+    "total": 12
+  },
+  "codeReport": {},
+  "points": 0,
+  "alreadySavedStars": 0,
+  "stars": 0,
+  "consoleLogs": [],
+  "timeBonus": 0,
+  "timeBonusReason": null,
+  "advice": null
+}

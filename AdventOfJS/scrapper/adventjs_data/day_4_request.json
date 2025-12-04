@@ -1,0 +1,4 @@
+{
+  "code": "function createXmasTree(height, ornament) {\n  const organized = {};\n\n return;\n}",
+  "language": "javascript"
+}

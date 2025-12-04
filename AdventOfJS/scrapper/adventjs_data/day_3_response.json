@@ -1,0 +1,129 @@
+{
+  "ops": 0,
+  "results": {
+    "details": [
+      {
+        "info": {
+          "msg": "return type",
+          "expected": "\"object\"",
+          "actual": "\"undefined\""
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": true,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "organizeInventory([])",
+          "expected": "{}"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "organizeInventory([\n  { name: \"doll\", quantity: 5, category: \"toys\" }\n])",
+          "expected": "{\"toys\":{\"doll\":5}}"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "organizeInventory([\n  { name: \"book\", quantity: 10, category: \"education\" },\n  { name: \"book\", quantity: 5, category: \"education\" },\n  { name: \"paint\", quantity: 3, category: \"art\" }\n])",
+          "expected": "{\"education\":{\"book\":15},\"art\":{\"paint\":3}}"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "info": {
+          "msg": "organizeInventory([\n  { name: \"doll\", quantity: 5, category: \"toys\" },\n  { name: \"car\", quantity: 3, category: \"toys\" },\n  { name: \"ball\", quantity: 2, category: \"sports\" },\n  { name: \"car\", quantity: 2, category: \"toys\" },\n  { name: \"racket\", quantity: 4, category: \"sports\" }\n])",
+          "expected": "{\"toys\":{\"doll\":5,\"car\":5},\"sports\":{\"ball\":2,\"racket\":4}}"
+        },
+        "secret": false,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": true
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": false,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      },
+      {
+        "secretFail": true,
+        "info": {},
+        "secret": true,
+        "ok": false,
+        "isTwitchSecret": true,
+        "hideConsole": false,
+        "availableTest": false
+      }
+    ],
+    "failures": 11,
+    "secretFails": 6,
+    "totalPublic": 11,
+    "total": 11
+  },
+  "codeReport": {},
+  "points": 0,
+  "alreadySavedStars": 0,
+  "stars": 0,
+  "consoleLogs": [],
+  "timeBonus": 0,
+  "timeBonusReason": null,
+  "advice": null
+}
